@@ -49,7 +49,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Ruta por defecto donde Compose genera los archivos finales HTML/Wasm
-          path: './composeApp/build/dist/wasmJs/productionExecutable'
+          path: './build/dist/wasmJs/productionExecutable'
 
       - name: Desplegar en GitHub Pages
         id: deployment
