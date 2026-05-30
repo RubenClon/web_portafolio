@@ -37,9 +37,6 @@ jobs:
         run: chmod +x gradlew
 
       - name: Compilar Distribución WebAssembly
-        run: ./gradlew :composeApp:wasmJsBrowserDistribution
-
-      - name: Compilar Distribución WebAssembly
         run: ./gradlew wasmJsBrowserDistribution
         
       - name: Configurar GitHub Pages
