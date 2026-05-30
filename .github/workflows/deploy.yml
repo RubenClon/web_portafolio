@@ -40,9 +40,8 @@ jobs:
         run: ./gradlew :composeApp:wasmJsBrowserDistribution
 
       - name: Compilar Distribución WebAssembly
-        # Tarea de Gradle estándar de KMP para compilar la web de producción
-        run: ./gradlew :composeApp:wasmJsBrowserDistribution 
-
+        run: ./gradlew wasmJsBrowserDistribution
+        
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v4
 
